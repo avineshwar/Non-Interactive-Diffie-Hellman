@@ -1,0 +1,28 @@
+Script started on Mon Apr 25 23:53:04 2016
+$ ./skgu_pki init
+$ ./skgu_pki cert -g alice.priv alice.pub alice
+$ ./skgu_pki cert -g bob.priv bob.pub bob
+$ ./skgu_nidh alice.priv alice.cert alice bob.pub bob.cert bob example1
+argc count is: 8
+argc value is: 8
+Valid certificate
+value of status: 32
+value of status: 1
+$ ls ea xaple   mple1
+example1
+$ ca  t example1
+zZogXiQI1uQLw9U61Sc8iVJK6Pwzv1Bl
+$ rm example1
+$ ./skgu_nidh bob.priv bob.cert bob alice.pub alice.cert alice example1
+argc count is: 8
+argc value is: 8
+Valid certificate
+value of status: 32
+value of status: 1
+$ ls example1
+example1
+$ cat exaple    ample1
+zZogXiQI1uQLw9U61Sc8iVJK6Pwzv1Bl
+$ 
+
+Script done on Mon Apr 25 23:54:14 2016
